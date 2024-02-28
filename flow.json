@@ -1,0 +1,67 @@
+[
+    {
+        "id": "49478d09ae1129e7",
+        "type": "inject",
+        "z": "61726ea4f46f8c1c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "ca668fbc078f2a82"
+            ]
+        ]
+    },
+    {
+        "id": "ca668fbc078f2a82",
+        "type": "function",
+        "z": "61726ea4f46f8c1c",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "77845aa623536baf"
+            ]
+        ]
+    },
+    {
+        "id": "77845aa623536baf",
+        "type": "debug",
+        "z": "61726ea4f46f8c1c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 240,
+        "wires": []
+    }
+]
